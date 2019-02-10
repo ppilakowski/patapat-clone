@@ -13,6 +13,14 @@
     <script type="text/paperscript" canvas="myCanvas">
 
       var circles = [];
+      
+        var text = new PointText({
+        position: view.center,
+        fillColor: 'white',
+        justification: 'center',
+        fontSize: 20,
+        content : 'Press any letter',
+    });
 
       function onKeyDown(event) {
         if(keyData[event.key]){
